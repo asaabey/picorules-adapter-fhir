@@ -49,7 +49,7 @@ export interface TerminologyEntry {
   /** FHIR resource type to search */
   resourceType: string;
   /** How to extract the value from the resource */
-  valuePath?: 'valueQuantity.value' | 'valueString' | 'code' | 'gender' | 'birthDate';
+  valuePath?: 'valueQuantity.value' | 'valueString' | 'valueCodeableConcept' | 'code' | 'gender' | 'birthDate';
   /** How to extract the date from the resource */
   datePath?: 'effectiveDateTime' | 'onsetDateTime' | 'authoredOn' | 'recordedDate' | 'performedDateTime' | 'birthDate';
 }
