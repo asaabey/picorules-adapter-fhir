@@ -1,0 +1,52 @@
+{
+  "name": "picorules-adapter-fhir",
+  "version": "0.1.0",
+  "description": "FHIR R4 data adapter for the Picorules JS evaluator — evaluate clinical ruleblocks directly against FHIR Bundles",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "picorules",
+    "fhir",
+    "fhir-r4",
+    "adapter",
+    "clinical",
+    "decision-support",
+    "hl7",
+    "loinc",
+    "snomed",
+    "icd-10"
+  ],
+  "author": "TKC",
+  "license": "MIT",
+  "dependencies": {
+    "picorules-compiler-js-core": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  }
+}
