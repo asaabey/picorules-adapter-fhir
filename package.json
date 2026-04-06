@@ -1,6 +1,6 @@
 {
   "name": "picorules-adapter-fhir",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "FHIR R4 data adapter for the Picorules JS evaluator — evaluate clinical ruleblocks directly against FHIR Bundles",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
